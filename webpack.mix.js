@@ -16,3 +16,4 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'pub
     require('tailwindcss'),
     require('autoprefixer'),
 ]);
+/* Final projeto DPS rever tamanho das imagens para não ficar desconfigurado */

@@ -24,7 +24,8 @@
           @endforeach
       </ul>
   @endif --}}
-  <form action="{{route('posts.put', $post->id)}}" method="POST" enctype="multipart/form-data">
+   <form action="{{route('post.update',$post->id)}}" method="POST" enctype="multipart/form-data">
+
       {{-- <input type="text" name="_token" value="{{csrf_token()}}"> --}}
       @csrf
       @method('put')
@@ -33,10 +34,6 @@
       <textarea name="content" id="content" cols="30" rows="4" placeholder="Conteúdo" value="{{$post->content}}"></textarea><br>
       <button type="submit">Enviar</button> --}}
   </form>
-
-
-
-
 @endsection
 
 

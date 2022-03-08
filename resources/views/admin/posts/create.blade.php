@@ -24,8 +24,8 @@
             @endforeach
         </ul>
     @endif --}}
-    <form action="{{route('posts.store')}}" method="POST" enctype="multipart/form-data">
-        {{-- <input type="text" name="_token" value="{{csrf_token()}}"> --}}
+    <form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
+       {{-- <input type="text" name="_token" value="{{csrf_token()}}"> --}}
        {{--  @csrf --}}
         @include('admin.posts._partials.form')
        {{--  @include('admin.posts._partials.form') --}}
@@ -33,7 +33,4 @@
         <textarea name="content" id="content" cols="30" rows="4" placeholder="Conteúdo" value="{{old('content')}}"></textarea><br>
         <button type="submit">Enviar</button> --}}
     </form>
-
-
-
     @endsection
